@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PopKoung Leaderboard</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Firebase SDK -->
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.21.0/firebase-app.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.21.0/firebase-auth.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.21.0/firebase-firestore.js"></script>
+    <link rel="icon" href="open2.png">
+</head>
+<body>
+    <img src="onigiri.png" id="onigiri" alt="Onigiri">
+    <div id="container">
+        <img id="cat" src="closed2.png" onclick="popCat()" alt="Pop Koung">
+        <audio id="popSound" src="pop.mp3"></audio>
+        <div id="score-container" >
+            <div id="score">
+                <span id="score-value">0</span>
+            </div>
+        </div>
+        
+        <div id="leaderboard">
+            <h2>Leaderboard</h2>
+            <ul id="leaderboardList"></ul>
+        </div>
+        <button id="loginBtn" style="background-color: #007bff;">Login with Google</button>
+        <button id="logoutBtn" style="display:none;">Logout</button>
+    </div>
+    <br><br>
+    
+    <script type="module" src="script.js"></script>
+</body>
+</html>
