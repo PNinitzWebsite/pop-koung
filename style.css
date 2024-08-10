@@ -93,7 +93,7 @@ body {
     width: 160px; /* ขนาดของภาพ */
     height: auto;
     z-index: 2; /* ตั้งค่าให้ต่ำกว่าข้อความ */
-    transform: translateY(-50px);
+    transform: translateY(-40px);
     
 }
 
@@ -194,13 +194,13 @@ button:hover {
 }
 @keyframes up {
     0% {
-        transform: translateY(-60px);
+        transform: translateY(-40px);
     }
     50% {
         transform: translateY(-150px);
     }
     100% {
-        transform: translateY(-60px);
+        transform: translateY(-40px);
     }
 }
 
