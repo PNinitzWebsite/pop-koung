@@ -78,7 +78,7 @@ function popCat() {
 
         setTimeout(() => {
             cat.src = 'closed2.png';
-        }, 300);
+        }, 350);
 
         sound.onended = function() {
             // Update score
